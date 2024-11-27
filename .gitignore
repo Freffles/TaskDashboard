@@ -1,35 +1,82 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
+# Dependencies
+node_modules/
+.pnp/
 .pnp.js
+.yarn/
+.npm/
 
-# testing
-/coverage
+# Testing
+coverage/
+.nyc_output/
+*.lcov
 
-# next.js
-/.next/
-/out/
+# Next.js
+.next/
+out/
+.swc/
+build/
+dist/
 
-# production
-/build
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
 
-# misc
-.DS_Store
-*.pem
-
-# debug
+# Debug Logs
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
 
-# local env files
-.env*.local
+# IDE and Editor files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
 
-# vercel
-.vercel
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# typescript
+# TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Cache and Temporary files
+.cache/
+.temp/
+.tmp/
+*.tmp
+*.temp
+.eslintcache
+.stylelintcache
+
+# Build output
+dist/
+build/
+*.bundle.js
+*.chunk.js
+
+# Misc
+*.pem
+.vercel
+.turbo
+.bolt/
